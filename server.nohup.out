@@ -56,3 +56,10 @@
 2021-02-25 17:26:25.939  INFO 63202 --- [nio-8761-exec-9] c.n.e.registry.AbstractInstanceRegistry  : Registered instance MICROSERVICE-DEMO/172.25.16.187:microservice-demo with status UP (replication=true)
 2021-02-25 17:26:35.628  INFO 63202 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
 2021-02-25 17:27:35.630  INFO 63202 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2021-02-25 17:28:35.632  INFO 63202 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2021-02-25 17:29:35.634  INFO 63202 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2021-02-25 17:30:35.636  INFO 63202 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2021-02-25 17:31:35.639  INFO 63202 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2021-02-25 17:32:27.138  INFO 63202 --- [nio-8761-exec-5] c.n.e.registry.AbstractInstanceRegistry  : Registered instance MICROSERVICE-DEMO/172.25.16.187:microservice-demo with status UP (replication=false)
+2021-02-25 17:32:27.659  INFO 63202 --- [nio-8761-exec-4] c.n.e.registry.AbstractInstanceRegistry  : Registered instance MICROSERVICE-DEMO/172.25.16.187:microservice-demo with status UP (replication=true)
+2021-02-25 17:32:35.641  INFO 63202 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
