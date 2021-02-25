@@ -10,7 +10,7 @@
 	</parent>
 	<groupId>com.github.microprograms</groupId>
 	<artifactId>spring-cloud-starter-netflix-eureka-server-demo</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>1.0.0</version>
 	<name>spring-cloud-starter-netflix-eureka-server-demo</name>
 	<description>Demo project for Spring Boot</description>
 	<properties>
