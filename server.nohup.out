@@ -5,74 +5,62 @@
  \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
   '  |____| .__|_| |_|_| |_\__, | / / / /
  =========|_|==============|___/=/_/_/_/
- :: Spring Boot ::                (v2.4.3)
+ :: Spring Boot ::        (v2.3.9.RELEASE)
 
-2021-02-26 16:39:27.538  INFO 77064 --- [           main] tarterNetflixEurekaServerDemoApplication : Starting SpringCloudStarterNetflixEurekaServerDemoApplication v1.0.0 using Java 11.0.8 on localhost with PID 77064 (/Users/xuzewei/microprograms/spring-cloud-starter-netflix-eureka-server-demo/target/spring-cloud-starter-netflix-eureka-server-demo-1.0.0.jar started by xuzewei in /Users/xuzewei/microprograms/spring-cloud-starter-netflix-eureka-server-demo)
-2021-02-26 16:39:27.553  INFO 77064 --- [           main] tarterNetflixEurekaServerDemoApplication : No active profile set, falling back to default profiles: default
-2021-02-26 16:39:30.880  INFO 77064 --- [           main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=2ade3b4e-074c-3d94-9ba8-3a9d7cf78066
-2021-02-26 16:39:31.656  INFO 77064 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8761 (http)
-2021-02-26 16:39:31.680  INFO 77064 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2021-02-26 16:39:31.680  INFO 77064 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.43]
-2021-02-26 16:39:31.793  INFO 77064 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2021-02-26 16:39:31.794  INFO 77064 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4089 ms
-2021-02-26 16:39:32.865  INFO 77064 --- [           main] c.s.j.s.i.a.WebApplicationImpl           : Initiating Jersey application, version 'Jersey: 1.19.4 05/24/2017 03:20 PM'
-2021-02-26 16:39:33.026  INFO 77064 --- [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
-2021-02-26 16:39:33.029  INFO 77064 --- [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
-2021-02-26 16:39:33.296  INFO 77064 --- [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
-2021-02-26 16:39:33.296  INFO 77064 --- [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
-2021-02-26 16:39:34.794  INFO 77064 --- [           main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2021-02-26 16:39:35.837  INFO 77064 --- [           main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses Jersey
-2021-02-26 16:39:36.031  WARN 77064 --- [           main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
-2021-02-26 16:39:36.081  INFO 77064 --- [           main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
-2021-02-26 16:39:36.164  INFO 77064 --- [           main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
-2021-02-26 16:39:36.164  INFO 77064 --- [           main] com.netflix.discovery.DiscoveryClient    : Client configured to neither register nor query for data.
-2021-02-26 16:39:36.186  INFO 77064 --- [           main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1614328776185 with initial instances count: 0
-2021-02-26 16:39:36.279  INFO 77064 --- [           main] c.n.eureka.DefaultEurekaServerContext    : Initializing ...
-2021-02-26 16:39:36.284  INFO 77064 --- [           main] c.n.eureka.cluster.PeerEurekaNodes       : Adding new peer nodes [http://localhost:8761/eureka/]
-2021-02-26 16:39:36.756  INFO 77064 --- [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
-2021-02-26 16:39:36.756  INFO 77064 --- [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
-2021-02-26 16:39:36.757  INFO 77064 --- [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
-2021-02-26 16:39:36.757  INFO 77064 --- [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
-2021-02-26 16:39:36.967  INFO 77064 --- [           main] c.n.eureka.cluster.PeerEurekaNodes       : Replica node URL:  http://localhost:8761/eureka/
-2021-02-26 16:39:36.984  INFO 77064 --- [           main] c.n.e.registry.AbstractInstanceRegistry  : Finished initializing remote region registries. All known remote regions: []
-2021-02-26 16:39:36.986  INFO 77064 --- [           main] c.n.eureka.DefaultEurekaServerContext    : Initialized
-2021-02-26 16:39:37.003  INFO 77064 --- [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
-2021-02-26 16:39:37.055  INFO 77064 --- [           main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application UNKNOWN with eureka with status UP
-2021-02-26 16:39:37.061  INFO 77064 --- [       Thread-9] o.s.c.n.e.server.EurekaServerBootstrap   : Setting the eureka configuration..
-2021-02-26 16:39:37.095  INFO 77064 --- [       Thread-9] o.s.c.n.e.server.EurekaServerBootstrap   : isAws returned false
-2021-02-26 16:39:37.096  INFO 77064 --- [       Thread-9] o.s.c.n.e.server.EurekaServerBootstrap   : Initialized server context
-2021-02-26 16:39:37.097  INFO 77064 --- [       Thread-9] c.n.e.r.PeerAwareInstanceRegistryImpl    : Got 1 instances from neighboring DS node
-2021-02-26 16:39:37.097  INFO 77064 --- [       Thread-9] c.n.e.r.PeerAwareInstanceRegistryImpl    : Renew threshold is: 1
-2021-02-26 16:39:37.098  INFO 77064 --- [       Thread-9] c.n.e.r.PeerAwareInstanceRegistryImpl    : Changing status to UP
-2021-02-26 16:39:37.121  INFO 77064 --- [       Thread-9] e.s.EurekaServerInitializerConfiguration : Started Eureka Server
-2021-02-26 16:39:37.146  INFO 77064 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8761 (http) with context path ''
-2021-02-26 16:39:37.147  INFO 77064 --- [           main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8761
-2021-02-26 16:39:37.196  INFO 77064 --- [           main] tarterNetflixEurekaServerDemoApplication : Started SpringCloudStarterNetflixEurekaServerDemoApplication in 10.988 seconds (JVM running for 12.238)
-2021-02-26 16:39:55.426  INFO 77064 --- [nio-8761-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2021-02-26 16:39:55.426  INFO 77064 --- [nio-8761-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2021-02-26 16:39:55.429  INFO 77064 --- [nio-8761-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
-2021-02-26 16:39:56.086  INFO 77064 --- [nio-8761-exec-2] c.n.e.registry.AbstractInstanceRegistry  : Registered instance SPRING-CLOUD-MICROSERVICE-DEMO2/172.25.16.187:spring-cloud-microservice-demo2:8082 with status UP (replication=false)
-2021-02-26 16:39:56.898  INFO 77064 --- [nio-8761-exec-3] c.n.e.registry.AbstractInstanceRegistry  : Registered instance SPRING-CLOUD-MICROSERVICE-DEMO2/172.25.16.187:spring-cloud-microservice-demo2:8082 with status UP (replication=true)
-2021-02-26 16:40:00.985  INFO 77064 --- [nio-8761-exec-5] c.n.e.registry.AbstractInstanceRegistry  : Registered instance SPRING-CLOUD-MICROSERVICE-DEMO1/172.25.16.187:spring-cloud-microservice-demo1:8081 with status UP (replication=false)
-2021-02-26 16:40:01.503  INFO 77064 --- [nio-8761-exec-6] c.n.e.registry.AbstractInstanceRegistry  : Registered instance SPRING-CLOUD-MICROSERVICE-DEMO1/172.25.16.187:spring-cloud-microservice-demo1:8081 with status UP (replication=true)
-2021-02-26 16:40:37.106  INFO 77064 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
-2021-02-26 16:41:37.116  INFO 77064 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
-2021-02-26 16:42:37.125  INFO 77064 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
-2021-02-26 16:43:37.122  INFO 77064 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
-2021-02-26 16:43:38.792  INFO 77064 --- [nio-8761-exec-3] c.n.e.registry.AbstractInstanceRegistry  : Registered instance SPRING-CLOUD-MICROSERVICE-DEMO2/172.25.16.187:spring-cloud-microservice-demo2:8082 with status UP (replication=false)
-2021-02-26 16:43:39.321  INFO 77064 --- [nio-8761-exec-4] c.n.e.registry.AbstractInstanceRegistry  : Registered instance SPRING-CLOUD-MICROSERVICE-DEMO2/172.25.16.187:spring-cloud-microservice-demo2:8082 with status UP (replication=true)
-2021-02-26 16:44:37.124  INFO 77064 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
-2021-02-26 16:45:37.126  INFO 77064 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
-2021-02-26 16:45:48.604  INFO 77064 --- [nio-8761-exec-5] c.n.e.registry.AbstractInstanceRegistry  : Registered instance SPRING-CLOUD-MICROSERVICE-DEMO2/172.25.16.187:spring-cloud-microservice-demo2:8082 with status UP (replication=false)
-2021-02-26 16:45:49.157  INFO 77064 --- [nio-8761-exec-6] c.n.e.registry.AbstractInstanceRegistry  : Registered instance SPRING-CLOUD-MICROSERVICE-DEMO2/172.25.16.187:spring-cloud-microservice-demo2:8082 with status UP (replication=true)
-2021-02-26 16:46:37.128  INFO 77064 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
-2021-02-26 16:47:37.130  INFO 77064 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
-2021-02-26 16:48:37.132  INFO 77064 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
-2021-02-26 16:49:27.842  INFO 77064 --- [nio-8761-exec-9] c.n.e.registry.AbstractInstanceRegistry  : Registered instance SPRING-CLOUD-MICROSERVICE-DEMO1/172.25.16.187:spring-cloud-microservice-demo1:8081 with status UP (replication=false)
-2021-02-26 16:49:28.421  INFO 77064 --- [nio-8761-exec-2] c.n.e.registry.AbstractInstanceRegistry  : Registered instance SPRING-CLOUD-MICROSERVICE-DEMO1/172.25.16.187:spring-cloud-microservice-demo1:8081 with status UP (replication=true)
-2021-02-26 16:49:34.588  INFO 77064 --- [nio-8761-exec-3] c.n.e.registry.AbstractInstanceRegistry  : Registered instance SPRING-CLOUD-MICROSERVICE-DEMO2/172.25.16.187:spring-cloud-microservice-demo2:8082 with status UP (replication=false)
-2021-02-26 16:49:35.109  INFO 77064 --- [nio-8761-exec-4] c.n.e.registry.AbstractInstanceRegistry  : Registered instance SPRING-CLOUD-MICROSERVICE-DEMO2/172.25.16.187:spring-cloud-microservice-demo2:8082 with status UP (replication=true)
-2021-02-26 16:49:37.134  INFO 77064 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
-2021-02-26 16:50:37.136  INFO 77064 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
-2021-02-26 16:51:37.139  INFO 77064 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
-2021-02-26 16:52:37.142  INFO 77064 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+2021-03-01 14:17:47.442  INFO 10123 --- [           main] tarterNetflixEurekaServerDemoApplication : No active profile set, falling back to default profiles: default
+2021-03-01 14:17:49.203  WARN 10123 --- [           main] o.s.boot.actuate.endpoint.EndpointId     : Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2021-03-01 14:17:49.512  INFO 10123 --- [           main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=08d0efdb-ac1f-3bc7-b2f5-43a0280a4b07
+2021-03-01 14:17:50.199  INFO 10123 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8761 (http)
+2021-03-01 14:17:50.218  INFO 10123 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-03-01 14:17:50.218  INFO 10123 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.43]
+2021-03-01 14:17:50.343  INFO 10123 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-03-01 14:17:50.343  INFO 10123 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2847 ms
+2021-03-01 14:17:50.576  WARN 10123 --- [           main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2021-03-01 14:17:50.576  INFO 10123 --- [           main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2021-03-01 14:17:50.602  INFO 10123 --- [           main] c.netflix.config.DynamicPropertyFactory  : DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@6b5966e1
+2021-03-01 14:17:51.251  INFO 10123 --- [           main] c.s.j.s.i.a.WebApplicationImpl           : Initiating Jersey application, version 'Jersey: 1.19.4 05/24/2017 03:20 PM'
+2021-03-01 14:17:51.379  INFO 10123 --- [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2021-03-01 14:17:51.382  INFO 10123 --- [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2021-03-01 14:17:51.646  INFO 10123 --- [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2021-03-01 14:17:51.647  INFO 10123 --- [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2021-03-01 14:17:52.352  WARN 10123 --- [           main] o.s.c.n.a.ArchaiusAutoConfiguration      : No spring.application.name found, defaulting to 'application'
+2021-03-01 14:17:52.353  WARN 10123 --- [           main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2021-03-01 14:17:52.353  INFO 10123 --- [           main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2021-03-01 14:17:52.999  INFO 10123 --- [           main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-03-01 14:17:53.754  INFO 10123 --- [           main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses Jersey
+2021-03-01 14:17:53.849  WARN 10123 --- [           main] ockingLoadBalancerClientRibbonWarnLogger : You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2021-03-01 14:17:53.950  INFO 10123 --- [           main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2021-03-01 14:17:54.011  INFO 10123 --- [           main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2021-03-01 14:17:54.011  INFO 10123 --- [           main] com.netflix.discovery.DiscoveryClient    : Client configured to neither register nor query for data.
+2021-03-01 14:17:54.025  INFO 10123 --- [           main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1614579474024 with initial instances count: 0
+2021-03-01 14:17:54.093  INFO 10123 --- [           main] c.n.eureka.DefaultEurekaServerContext    : Initializing ...
+2021-03-01 14:17:54.095  INFO 10123 --- [           main] c.n.eureka.cluster.PeerEurekaNodes       : Adding new peer nodes [http://localhost:8761/eureka/]
+2021-03-01 14:17:54.399  INFO 10123 --- [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2021-03-01 14:17:54.400  INFO 10123 --- [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2021-03-01 14:17:54.400  INFO 10123 --- [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2021-03-01 14:17:54.400  INFO 10123 --- [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2021-03-01 14:17:54.573  INFO 10123 --- [           main] c.n.eureka.cluster.PeerEurekaNodes       : Replica node URL:  http://localhost:8761/eureka/
+2021-03-01 14:17:54.588  INFO 10123 --- [           main] c.n.e.registry.AbstractInstanceRegistry  : Finished initializing remote region registries. All known remote regions: []
+2021-03-01 14:17:54.589  INFO 10123 --- [           main] c.n.eureka.DefaultEurekaServerContext    : Initialized
+2021-03-01 14:17:54.618  INFO 10123 --- [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2021-03-01 14:17:54.665  INFO 10123 --- [           main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application UNKNOWN with eureka with status UP
+2021-03-01 14:17:54.669  INFO 10123 --- [      Thread-10] o.s.c.n.e.server.EurekaServerBootstrap   : Setting the eureka configuration..
+2021-03-01 14:17:54.670  INFO 10123 --- [      Thread-10] o.s.c.n.e.server.EurekaServerBootstrap   : Eureka data center value eureka.datacenter is not set, defaulting to default
+2021-03-01 14:17:54.672  INFO 10123 --- [      Thread-10] o.s.c.n.e.server.EurekaServerBootstrap   : Eureka environment value eureka.environment is not set, defaulting to test
+2021-03-01 14:17:54.700  INFO 10123 --- [      Thread-10] o.s.c.n.e.server.EurekaServerBootstrap   : isAws returned false
+2021-03-01 14:17:54.705  INFO 10123 --- [      Thread-10] o.s.c.n.e.server.EurekaServerBootstrap   : Initialized server context
+2021-03-01 14:17:54.706  INFO 10123 --- [      Thread-10] c.n.e.r.PeerAwareInstanceRegistryImpl    : Got 1 instances from neighboring DS node
+2021-03-01 14:17:54.706  INFO 10123 --- [      Thread-10] c.n.e.r.PeerAwareInstanceRegistryImpl    : Renew threshold is: 1
+2021-03-01 14:17:54.707  INFO 10123 --- [      Thread-10] c.n.e.r.PeerAwareInstanceRegistryImpl    : Changing status to UP
+2021-03-01 14:17:54.725  INFO 10123 --- [      Thread-10] e.s.EurekaServerInitializerConfiguration : Started Eureka Server
+2021-03-01 14:17:54.751  INFO 10123 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8761 (http) with context path ''
+2021-03-01 14:17:54.752  INFO 10123 --- [           main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8761
+2021-03-01 14:17:54.781  INFO 10123 --- [           main] tarterNetflixEurekaServerDemoApplication : Started SpringCloudStarterNetflixEurekaServerDemoApplication in 10.249 seconds (JVM running for 11.397)
+2021-03-01 14:18:20.302  INFO 10123 --- [nio-8761-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-03-01 14:18:20.302  INFO 10123 --- [nio-8761-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-03-01 14:18:20.313  INFO 10123 --- [nio-8761-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 10 ms
+2021-03-01 14:18:20.804  INFO 10123 --- [nio-8761-exec-2] c.n.e.registry.AbstractInstanceRegistry  : Registered instance SPRING-CLOUD-MICROSERVICE-DEMO1/172.25.16.25:spring-cloud-microservice-demo1:8081 with status UP (replication=false)
+2021-03-01 14:18:21.560  INFO 10123 --- [nio-8761-exec-3] c.n.e.registry.AbstractInstanceRegistry  : Registered instance SPRING-CLOUD-MICROSERVICE-DEMO1/172.25.16.25:spring-cloud-microservice-demo1:8081 with status UP (replication=true)
+2021-03-01 14:18:45.003  INFO 10123 --- [nio-8761-exec-1] c.n.e.registry.AbstractInstanceRegistry  : Registered instance SPRING-CLOUD-MICROSERVICE-DEMO2/172.25.16.25:spring-cloud-microservice-demo2:8082 with status UP (replication=false)
+2021-03-01 14:18:45.529  INFO 10123 --- [nio-8761-exec-2] c.n.e.registry.AbstractInstanceRegistry  : Registered instance SPRING-CLOUD-MICROSERVICE-DEMO2/172.25.16.25:spring-cloud-microservice-demo2:8082 with status UP (replication=true)
+2021-03-01 14:18:54.712  INFO 10123 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
