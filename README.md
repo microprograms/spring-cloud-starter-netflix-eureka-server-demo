@@ -1,7 +1,7 @@
 # Eureka 注册中心
 
-默认端口：8761
-默认注册地址：http://localhost:8761/eureka/
+- `默认端口：` 8761
+- `默认注册地址：` http://localhost:8761/eureka/
 
 #### 编译打包
 
