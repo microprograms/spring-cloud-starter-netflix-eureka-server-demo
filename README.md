@@ -3,6 +3,13 @@
 - `默认端口：` 8761
 - `默认注册地址：` http://localhost:8761/eureka/
 
+
+#### 版本依赖
+- `Jdk` 1.8 及以上
+- `Spring Boot` 2.3.9.RELEASE
+- `Spring Cloud` Hoxton.SR10
+
+
 #### 编译打包
 
 ```shell
